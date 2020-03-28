@@ -1,3 +1,5 @@
 Django
 djangorestframework
 django-oauth-toolkit
+django_heroku
+oauth2_provider
