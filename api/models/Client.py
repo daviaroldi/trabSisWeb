@@ -1,13 +1,12 @@
 from django.db import models
+from .proposal import Proposal
 
 class Client(models.Model):
 
     class Meta:
-        db_table = 'contract'
+        db_table = 'client'
 
-    title = models.CharField(max_length=200)
-    seconds = models.IntegerField()
-    # album = models.ForeignKey('Album', related_name='musics')
-
-    def __str__(self):
-        return self.title
+    name = models.CharField(max_length=200)
+    cpf = models.CharField(max_length=200)
+    proposals = models.ForeignKey(Proposal, on_delete=models.DO_NOTHING, related_name='client')
+    
