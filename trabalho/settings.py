@@ -132,6 +132,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+FIXTURE_DIRS = (
+    os.path.join('api', 'fixtures'),
+    )
 
 import django_heroku
 django_heroku.settings(locals())

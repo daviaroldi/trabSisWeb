@@ -1,0 +1,10 @@
+[
+    {
+        "model": "api.proposal",
+        "pk": 1,
+        "fields": {
+            "title": "Teste",
+            "user": 1
+        }
+    }
+]

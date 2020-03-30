@@ -1,0 +1,12 @@
+[
+    {
+        "model": "api.client",
+        "pk": 1,
+        "fields": {
+            "name": "Fulano de tal",
+            "cpf": "01234567890",
+            "proposals_id": 1
+        }
+
+    }
+]
