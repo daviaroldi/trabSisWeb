@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from ..models.proposal import Proposal
+from ..models.ProposalModel import Proposal
 
 class ProposalSerializer(serializers.ModelSerializer):
     class Meta:

@@ -1,5 +1,5 @@
 from django.db import models
-from .proposal import Proposal
+from .ProposalModel import Proposal
 
 class Contract(models.Model):
 

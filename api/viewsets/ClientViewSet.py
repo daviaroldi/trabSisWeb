@@ -4,12 +4,12 @@ from django.db import models
 from rest_framework.response import Response
 from rest_framework.decorators import api_view, authentication_classes, permission_classes, parser_classes
 from rest_framework.permissions import IsAuthenticated
-from ..models.client import Client
+from ..models.ClientModel import Client
 from _datetime import datetime
 import json
 
 from rest_framework import viewsets
-from ..serializers.client import ClientSerializer
+from ..serializers.ClientSerializer import ClientSerializer
 
 class ClientViewSet(viewsets.ModelViewSet):
     queryset = Client.objects.all().order_by('name')

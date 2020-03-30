@@ -1,5 +1,5 @@
 from django.db import models
-from .client import Client
+from .ClientModel import Client
 
 class Document(models.Model):
 

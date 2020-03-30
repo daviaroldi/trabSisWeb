@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from ..models.client import Client
+from ..models.ClientModel import Client
 
 class ClientSerializer(serializers.ModelSerializer):
     class Meta:
