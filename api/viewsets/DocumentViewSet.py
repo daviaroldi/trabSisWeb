@@ -15,4 +15,4 @@ from oauth2_provider.contrib.rest_framework import TokenHasReadWriteScope
 class DocumentViewSet(viewsets.ModelViewSet):
     queryset = Document.objects.all().order_by('name')
     serializer_class = DocumentSerializer
-    permission_classes = [IsAuthenticated, TokenHasReadWriteScope]
+    # permission_classes = [TokenHasReadWriteScope]

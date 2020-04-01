@@ -15,4 +15,4 @@ from oauth2_provider.contrib.rest_framework import TokenHasReadWriteScope
 class ContractViewSet(viewsets.ModelViewSet):
     queryset = Contract.objects.all().order_by('-title')
     serializer_class = ContractSerializer
-    permission_classes = [IsAuthenticated, TokenHasReadWriteScope]
+    # permission_classes = [TokenHasReadWriteScope]

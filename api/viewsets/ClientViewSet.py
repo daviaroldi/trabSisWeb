@@ -16,4 +16,4 @@ from oauth2_provider.contrib.rest_framework import TokenHasReadWriteScope
 class ClientViewSet(viewsets.ModelViewSet):
     queryset = Client.objects.all().order_by('name')
     serializer_class = ClientSerializer
-    permission_classes = [IsAuthenticated, TokenHasReadWriteScope]
+    # permission_classes = [TokenHasReadWriteScope]
