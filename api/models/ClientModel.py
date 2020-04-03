@@ -1,5 +1,5 @@
 from django.db import models
-from .ProposalModel import Proposal
+# from .ProposalModel import Proposal
 
 class Client(models.Model):
 
@@ -8,5 +8,5 @@ class Client(models.Model):
 
     name = models.CharField(max_length=200)
     cpf = models.CharField(max_length=200)
-    proposals = models.ForeignKey(Proposal, on_delete=models.DO_NOTHING, related_name='client')
+    # proposals = models.ForeignKey(Proposal, on_delete=models.DO_NOTHING, related_name='client')
     

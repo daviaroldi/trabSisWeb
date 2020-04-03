@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import User
+from .ClientModel import Client
 
 class Proposal(models.Model):
 
@@ -7,4 +7,5 @@ class Proposal(models.Model):
         db_table = 'proposal'
 
     title = models.CharField(max_length=200)
-    user = models.ForeignKey(User, on_delete=models.DO_NOTHING, related_name='proposal')
+    client = models.ForeignKey(Client, on_delete=models.DO_NOTHING, related_name='proposal')
+    # client = models.ForeignKey(Client, on_delete=models.DO_NOTHING, related_name='contracts')

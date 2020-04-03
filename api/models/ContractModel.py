@@ -7,4 +7,4 @@ class Contract(models.Model):
         db_table = 'contract'
 
     title = models.CharField(max_length=200)
-    proposal = models.ForeignKey(Proposal, on_delete=models.DO_NOTHING, related_name='musics')
+    proposal = models.ForeignKey(Proposal, on_delete=models.DO_NOTHING, related_name='contracts')
