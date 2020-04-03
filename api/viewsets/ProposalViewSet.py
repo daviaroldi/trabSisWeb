@@ -13,6 +13,6 @@ from ..serializers.ProposalSerializer import ProposalSerializer
 from oauth2_provider.contrib.rest_framework import TokenHasReadWriteScope
 
 class ProposalViewSet(viewsets.ModelViewSet):
-    queryset = Proposal.objects.all().order_by('name')
+    queryset = Proposal.objects.all().order_by('title')
     serializer_class = ProposalSerializer
     # permission_classes = [TokenHasReadWriteScope]
